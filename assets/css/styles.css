@@ -69,6 +69,11 @@ button{
     width: 100%;
     z-index: 999999999999999999999999;
 }
+.bonetitle a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color:black;
+}
 .cntainer{
     padding-bottom: 5px;
 }
