@@ -199,6 +199,9 @@ button.hero-button{
     cursor: pointer;
     font-family: 'Poppins', sans-serif !important;
 }
+span.hero-btn-text{
+    font-family: 'Poppins', sans-serif !important;
+}
 
 @media (max-width:1024px){
     .hero{
