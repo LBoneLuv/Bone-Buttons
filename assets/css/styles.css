@@ -1,0 +1,612 @@
+/*+++++++++++++++++++++++++++++++++++++++*/
+/*                                       */
+/*             Bone Buttons              */
+/*                                       */
+/*            made by Boneluv            */
+/*            www.boneluv.es             */
+/*+++++++++++++++++++++++++++++++++++++++*/
+
+
+/* TIPOGRAPHY */
+
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca|Poppins:700&display=swap');
+
+code{
+    background: mediumaquamarine;
+    padding: 2px;
+    border-radius: 4px;
+    word-break: keep-all;
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+div,p,span,a{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1,h2,h3,h4,h5,b{
+    font-family: 'Poppins', sans-serif;
+    color:black;
+}
+
+h1{
+    font-size: 3.052em;
+}
+  
+h2{
+    font-size: 2.441em;
+}
+  
+h3{
+    font-size: 1.953em;
+}
+  
+h4{
+    font-size: 1.563em;
+}
+  
+h5{
+    font-size: 1.25em;
+}
+  
+small, .text_small {
+    font-size: 0.8em;
+}
+
+@media (max-width:1024px){
+    h1{
+        font-size: 1.5rem !important;
+    }
+}
+button{
+    font-family: 'Poppins', sans-serif;
+    transition: all .2s ease;
+}
+
+/* HEADER */
+.navmenu{
+    position: fixed;
+    background: white;
+    width: 100%;
+    z-index: 999999999999999999999999;
+}
+.cntainer{
+    padding-bottom: 5px;
+}
+
+.bonetitle{
+    text-align: center;
+}
+.text-sub{
+    color: SpringGreen !important;
+}
+.fas.fa-check-square{
+    color: mediumaquamarine;
+}
+div.cntainer{
+    margin: 0 auto;
+    width: 50%;
+}
+
+div.bonesub{
+    margin:5px 10px 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+span.kofi-link{
+    position: absolute;
+    top:20px;
+    right: 30%;
+}
+
+span.github-link{
+    position: absolute;
+    top:10px;
+    left:31%;
+}
+
+span.github-link a img{
+    width: 33px;
+}
+
+span.kofi-link a img{
+    width: 50px;
+}
+
+@media (max-width:1024px){
+    .cntainer{
+        margin-top:-10px !important;
+    }
+    .bonetitle{
+        line-height: 50px;
+    }
+    div.cntainer{
+        width: 100%;
+        margin-right: 10px;
+    }
+    .bonesub div{
+        font-size: 0.9rem !important;
+        margin: 10px 10px 0px 0px !important;
+    }
+    span.kofi-link{
+        position: fixed;
+        top:0px;
+        right: 10px;
+    }
+    
+    span.github-link{
+        position: fixed;
+        top: 10px;
+        left: 15px;
+    }
+}
+html,body{
+    overflow-x: hidden;
+    margin:0;
+}
+
+/* HELPER CLASSES */
+
+.center{
+    margin: 0 auto;
+}
+
+/* HERO SECTION */
+
+.hero-cnt{
+    width: 80%;
+    left:0;
+    right: 0;
+    margin:0 auto;
+}
+.hero{
+    height: 70vh;
+    margin-top:200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.hero-text{
+    margin-top:50px;
+    width: 40%;
+}
+.hero-img{
+    width: 40%;
+}
+.hero-img img{
+    width: 100%;
+}
+
+.hero-text p{
+    margin-bottom: 50px;
+}
+
+button.hero-button{
+    position: initial;
+    text-decoration: none;
+    background: #ff187c;
+    color: white;
+    padding:10px;
+    border-radius: 4px;
+    border:none;
+    cursor: pointer;
+}
+
+@media (max-width:1024px){
+    .hero{
+        display: block;
+        height: 80vh;
+    }
+    .hero-cnt{
+        width: 90%;
+    }
+    .hero-text{
+        width: 90%;
+    }
+    .hero-img{
+        width: 90%;
+    }
+    .hero-text h2{
+        font-size:2rem !important;
+    }
+    button.hero-button{
+        position: fixed;
+        bottom: -45px;
+        width: 80px;
+        left:0;
+        right: 0;
+        border-radius: 100%;
+        padding-top:-10px; 
+        padding-bottom: 50px;
+    }
+    span.hero-btn-text{
+        display: none;
+    }
+}
+
+/* BUTTONS SECTIONS */
+
+button.ripple {
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+.ripple:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, #fff 10%, transparent 10.01%) !important;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform .5s, opacity 1s;
+}
+
+.ripple:active:after {
+    transform: scale(0, 0);
+    opacity: .3;
+    transition: 0s;
+}
+
+button.disabled{
+    filter: grayscale(50%) !important;
+    opacity: 0.5;
+}
+
+.sq{
+    border-radius: 0px !important;
+}
+
+.round{
+    border-radius: 4px !important;
+    
+}
+
+
+@media (max-width: 1024px){
+    .style-out{
+        flex-direction: column !important;
+        width: 100%;
+    }
+    .out-text{
+        width: 100% !important;
+    }
+    .out-btns{
+        width: 100% !important;
+    }
+    .style-flat{
+        flex-direction: column !important;
+        width: 90%;
+    }
+    .flat-text{
+        width: 100% !important;
+    }
+    .flat-btns{
+        width: 100% !important;
+    }
+}
+div.styles-btn{
+    margin:0;
+}
+.styles-hdr{
+    width: 100%;
+    margin:0 0 0 0;
+    text-align: center;
+}
+.styles-hdr h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.styles-hdr p{
+    color: #ff187c;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* OUTLINE BUTTONS */
+
+.style-out{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin-bottom: 40px;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.out-btns{
+    width: 60%;
+}
+.out-text{
+    width: 40%;
+    line-height: 1.8;
+}
+.out-columns{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.out-col-1{
+    width: 50%;
+}
+.out-col-2{
+    width: 50%;
+}
+.out-buttons-simple button{
+    margin:10px 5px;
+}
+.out-buttons-grad button{
+    margin: 10px 5px;
+}
+
+/* OUTLINE SIMPLE */
+
+.out-simp{
+    background: none !important;
+    box-shadow: none !important;
+    border:2.5px solid black;
+    padding:7.5px 17.5px;
+    cursor: pointer;
+}
+
+.out-simp:hover{
+    border: 2.5px solid darkslategrey;
+    color: darkslategrey;
+}
+
+.out-simp-primary{
+    background: none !important;
+    box-shadow: none !important;
+    padding:7.5px 17.5px;
+    cursor: pointer;
+    border:2.5px solid #ff187c;
+    color:#ff187c;
+}
+
+.out-simp-primary:hover{
+    filter: brightness(75%);
+}
+
+.out-simp-secondary{
+    background: none !important;
+    box-shadow: none !important;
+    padding:7.5px 17.5px;
+    cursor: pointer;
+    border:2.5px solid mediumaquamarine;
+    color:mediumaquamarine;
+}
+
+.out-simp-secondary:hover{
+    filter: brightness(75%);
+}
+
+.out-simp-danger{
+    background: none !important;
+    box-shadow: none !important;
+    padding:7.5px 17.5px;
+    cursor: pointer;
+    border:2.5px solid crimson;
+    color:crimson;
+}
+.out-simp-danger:hover{
+    filter: brightness(75%);
+}
+
+/* OUTLINE GRADIENT */
+
+.out-grad{
+    position: relative;
+    padding:5.5px 13.5px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 2.5px solid transparent;
+    background-clip: padding-box;
+    background: white;
+}
+.out-grad::after{
+    position: absolute;
+    top: -5px; bottom: -5px;
+    left: -4.5px; right: -5px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    content: '';
+    z-index: -1;
+}
+
+.out-grad-primary{
+    position: relative;
+    padding:5.5px 13.5px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 2.5px solid transparent;
+    background-clip: padding-box;
+    background: white;
+}
+.out-grad-primary::after{
+    position: absolute;
+    top: -5px; bottom: -5px;
+    left: -4.5px; right: -5px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: linear-gradient(to right, darkmagenta , #ff187c);
+    content: '';
+    z-index: -1;
+}
+
+.out-grad-secondary{
+    position: relative;
+    padding:5.5px 13.5px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 2.5px solid transparent;
+    background-clip: padding-box;
+    background: white;
+}
+.out-grad-secondary::after{
+    position: absolute;
+    top: -5px; bottom: -5px;
+    left: -4.5px; right: -5px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: linear-gradient(to right, darkcyan, mediumaquamarine);
+    content: '';
+    z-index: -1;
+}
+.out-grad-danger{
+    position: relative;
+    padding:5.5px 13.5px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 2.5px solid transparent;
+    background-clip: padding-box;
+    background: white;
+}
+.out-grad-danger::after{
+    position: absolute;
+    top: -5px; bottom: -5px;
+    left: -4.5px; right: -5px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: linear-gradient(to right, darkred, crimson);
+    content: '';
+    z-index: -1;
+}
+
+/* FLAT BUTTONS */
+
+.style-flat{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin-bottom: 40px;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.flat-btns{
+    width: 60%;
+}
+.flat-text{
+    width: 40%;
+    line-height: 1.8;
+}
+.flat-columns{
+    display: flex;
+    justify-content: center;
+}
+.flat-col-1{
+    width: 50%;
+}
+.flat-col-2{
+    width: 50%;
+}
+.flat-buttons-simple{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flat-buttons-simple button{
+    margin:10px 5px;
+    width: auto;
+}
+.flat-buttons-grad button{
+    margin: 10px 5px;
+}
+
+/* OUTLINE SIMPLE */
+
+.flat-simp{
+    background: black !important;
+    color:white;
+    box-shadow: none !important;
+    padding:10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    border:none;
+}
+.flat-simp-primary{
+    background: none !important;
+    box-shadow: none !important;
+    padding:10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    background:#ff187c !important;
+    border: none;
+    color:white;
+}
+
+
+.flat-simp-secondary{
+    background: none !important;
+    box-shadow: none !important;
+    padding:10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: mediumaquamarine !important;
+    color:white;
+    border:none;
+}
+
+
+.flat-simp-danger{
+    background: none !important;
+    box-shadow: none !important;
+    padding:10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: crimson !important;
+    border:none;
+    color:white;
+}
+
+/* OUTLINE GRADIENT */
+
+.flat-grad{
+    position: relative;
+    padding:10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    background: linear-gradient(to right, black, darkslategrey);
+    color:white;
+}
+
+
+.flat-grad-primary{
+    position: relative;
+    padding:10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    background: linear-gradient(to right, darkmagenta , #ff187c);
+    color:white;
+}
+
+.flat-grad-secondary{
+    position: relative;
+    padding:10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    background: linear-gradient(to right, darkcyan, mediumaquamarine);
+    color: white;
+}
+
+.flat-grad-danger{
+    position: relative;
+    padding:10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    background: linear-gradient(to right, darkred, crimson);
+    color: white;
+}
