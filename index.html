@@ -48,17 +48,17 @@
             <div class="hero">
                 <div class="hero-text">
                     <h2>
-                        Unlimited designs for your buttons
+                        Simple and easy button generator
                     </h2>
                     <p>Rounded, shape, gradients all what you want.</p>
-                    <button class="hero-button center" id="hero-btn"><i class="fas fa-chevron-down"></i><span class="hero-btn-text">&nbsp; EXPLORE</span></button>
+                    <button onClick="window.location='./pages/generator.html'" class="hero-button center" id="hero-btn"><i class="fas fa-hat-wizard"></i><span class="hero-btn-text">&nbsp; CREATE</span></button>
                 </div>
                 <div class="hero-img">
                     <img src="assets/imgs/heroimg.png" alt="">
                 </div>
             </div>
         </div>
-        <div class="styles-btn" id="btn-styles">
+        <!-- <div class="styles-btn" id="btn-styles">
             <div class="styles-hdr">
                 <h3>Styles</h3>
                 <p>+50 differents buttons</p>
@@ -252,26 +252,26 @@
                         </div>
                     </div>
                 </div>
-        </div>
+        </div> -->
         
         <!-- Scripts to improve funcionalities -->
         <script>
-            $("#hero-btn").click(function() {
-                $('html, body').animate({
-                    scrollTop: $("#btn-styles").offset().top
-                }, 2000);
-            });
+            // $("#hero-btn").click(function() {
+            //     $('html, body').animate({
+            //         scrollTop: $("#btn-styles").offset().top
+            //     }, 2000);
+            // });
 
-            $(window).bind('scroll', function() {
-                if($(window).width() < 1024){                    
-                    if ($(window).scrollTop() > 100) {
-                        $('#hero-btn').fadeOut();
-                    }
-                    else {
-                    $('#hero-btn').fadeIn();
-                    }
-                }    
-            });
+            // $(window).bind('scroll', function() {
+            //     if($(window).width() < 1024){                    
+            //         if ($(window).scrollTop() > 100) {
+            //             $('#hero-btn').fadeOut();
+            //         }
+            //         else {
+            //         $('#hero-btn').fadeIn();
+            //         }
+            //     }    
+            // });
             
             $(window).scroll(function(){
                 if($(window).scrollTop() <= 30){

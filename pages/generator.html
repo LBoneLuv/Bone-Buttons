@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bone Buttons - Generator</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/generator.css">
+    <script src="https://kit.fontawesome.com/666831d88f.js"></script>
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/bbuttons.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navmenu" id="navmenu">
+            <h1 class="bonetitle center">
+                <span class="github-link">
+                    <a href="https://github.com/lboneluv"><img src="../assets/imgs/github.png"></a>
+                </span>
+                <a href="https://bonebuttons.netlify.com">
+                        Bone <b style="color:#ff187c;">Buttons</b>
+                </a>
+                
+                <span class="kofi-link">
+                    <a href="https://ko-fi.com/boneluv">
+                        <img src="../assets/imgs/ko-fi.png" alt="Buy me a coffee">
+                    </a>
+                </span>
+            </h1>
+            <div class="cntainer">
+                    <div class="center bonesub">
+                        <div class="textsub">
+                            <i class="fas fa-check-square"></i> +50 designs
+                        </div>
+                        <div class="textsub">
+                            <i class="fas fa-check-square"></i> CSS3
+                        </div>
+                        <div class="textsub">
+                            <i class="fas fa-check-square"></i> Retina Ready
+                        </div>
+                    </div>
+                </div>
+        </nav>
+    <diV class="gent-cnt-div">
+            <div class="gen-cnt">
+                    <div class="gen-prev" style="position: fixed;top:150px;left:10%;background: white;z-index: 99999999999;">
+                        <h2>Preview</h2>
+                        <div class="btn-prev-cnt">
+                            <button class="btn-prev" id="btn-prev"><span class="btn-prev-icon"><span class="btn-prev-text" id="btn-prev-text" value="Button">Button</span></button>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="gen-style">
+                        <h2>Style</h2>
+                        <div class="gen-mod">
+                            <div class="gen-mod-text">
+                                <h4>Text</h4>
+                                <input type="text" placeholder="Button text" id="gen-btn-text">
+                            </div>
+                            <div class="gen-mod-color">
+                                <h4>Color</h4>
+                                <div class="color-select">
+                                        <input type="radio" name="color" value=""><input type="text" name="color" placeholder="#FF187C" id="gen-btn-color" />
+                                        <label class="yellow">
+                                                <input type="radio" name="color" value="yellow" id="yellow">
+                                                <div class="btn-color"><span></span></div>
+                                        </label>
+                                        <label class="green">
+                                                <input type="radio" name="color" value="green" id="green">
+                                                <div class="btn-color"><span></span></div>
+                                        </label>
+                                        <label class="blue">
+                                                <input type="radio" name="color" value="blue" id="blue">
+                                                <div class="btn-color"><span></span></div>
+                                        </label>
+                                        <label class="pink">
+                                                <input type="radio" name="color" value="pink" id="pink">
+                                                <div class="btn-color"><span></span></div>
+                                        </label>
+                                        <label class="dark-blue">
+                                                <input type="radio" name="color" value="dark-blue" id="dark-blue">
+                                                <div class="btn-color"><span></span></div>
+                                        </label>
+                                        <label class="choose-color">
+                                                <input type="color" name="color" value="choose">
+                                                <div class="btn-color"><span><i class="fas fa-eye-dropper"></i></span></div>
+                                        </label>
+                                </div>
+                            </div>
+                            <div class="gen-mod-radius">
+                                <h4>Border</h4>
+                                <label>
+                                    <h5>Color</h5>
+                                    <input type="text" placeholder="#FF187C">
+                                </label>
+                                <label>
+                                    <div style="display: flex;">
+                                        <h5 style="width: 70%;">Border width</h5>
+                                        <span style="text-align: center;margin-top:15px;"><span id="border-width" style="text-align: right;vertical-align: middle;margin-top:45px;padding:5px 10px;background:gainsboro;border-radius:4px;color:#ff187c;"></span></span>
+                                    </div>
+                                    <input type="range" min="0" max="10" value="0" step="1" class="border-range" id="borderwidth">
+                                </label>
+                                <label>
+                                    <div style="display:flex;">
+                                        <h5 style="width: 70%">Border Radius</h5>
+                                        <span style="text-align: center;margin-top:15px;"><span id="border-radius" style="text-align: right;vertical-align: middle;margin-top:45px;padding:5px 10px;background:gainsboro;border-radius:4px;color:#ff187c;"></span></span>
+                                    </div>
+                                    <input type="range" min="0" max="100" value="0" step="1" class="border-range" id="borderradius">
+                                </label>                                
+                            </div>
+                            <div class="gen-mod-shadow" style="margin-top: 20px;">
+                                <h4>Box Shadow</h4>
+                                <label>
+                                    <h5>Color</h5>
+                                    <input type="text" name="shadow-color" placeholder="#FF187C">
+                                </label>
+                                <label>
+                                    <div style="display: flex;">
+                                        <h5 style="width: 70%">
+                                            Horizontal length
+                                        </h5>
+                                        <span style="margin-top: 15px;"><span id="bs-hl" style="text-align: right;vertical-align: middle;margin-top:45px;padding:5px 10px;background:gainsboro;border-radius:4px;color:#ff187c;"></span></span>
+                                    </div>
+                                    <input type="range" min="-200" max="200" value="0" step="1" class="border-range" id="bshl">
+                                </label>
+                                
+                            </div>
+                            <div class="gen-mod-border"></div>
+                        </div>
+                    </div>
+                </div>
+    </diV>
+    <script>
+        var borderw = document.getElementById("borderwidth");
+        var borderdisplay = document.getElementById("border-width");
+        borderdisplay.innerHTML = borderw.value+"px";
+
+        borderw.oninput = function() {
+            borderdisplay.innerHTML = this.value+"px";
+        }
+        var borderr = document.getElementById("borderradius");
+        var borderradisplay = document.getElementById("border-radius");
+        borderradisplay.innerHTML = borderr.value+"%";
+
+        borderr.oninput = function() {
+            borderradisplay.innerHTML = this.value+"%";
+        }
+        var boxshl = document.getElementById("bshl");
+        var boxshlength = document.getElementById("bs-hl");
+        boxshlength.innerHTML = boxshl.value+"px";
+
+        boxshl.oninput = function() {
+            boxshlength.innerHTML = this.value+"px";
+        }
+
+        var btnt = document.getElementById("btn-prev-text");
+        var btntext = document.getElementById("gen-btn-text");
+
+        btntext.oninput = function() {
+            btnt.innerHTML = this.value;
+        }
+        var btnc = document.getElementById("btn-prev");
+        var radiocolor = document.getElementsByName("color");
+
+        $(".color-select").on("click",function() {
+            radiocolor.checked.oninput = function() {
+                btnc.style.background = this.value;
+            }
+                });
+
+        // if(!$('gen-btn-color').val()){
+            
+        //     var btncolor = document.getElementById("gen-btn-color");
+        //     var btnbcolor = btncolor.value;
+
+           
+        // } else {
+        //     $(document).ready(function() {
+                
+        //             var btnc = document.getElementById("btn-prev");
+        //             var radiocolor = document.getElementsByName("color");
+        //             for(var i=0;i<radiocolor.length;i++){
+        //                 if(radiocolor[i].checked){
+        //                     colorfinal= radiocolor[i].value;
+        //                 }
+        //             }
+
+        //         $("div.color-select").on("click",function() {
+        //             btnc.style.background = colorfinal+" !important";
+        //         });
+        //     });
+        // }            
+    </script>
+</body>
+</html>
