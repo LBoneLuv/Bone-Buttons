@@ -8,12 +8,30 @@
         margin-top: 70px !important;
     }
     .gen-prev{
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
         width: 100% !important;
+        margin-left: -10%;
+        bottom:0px !important;
+        top: 77vh !important;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .gen-prev h2{
+        width: 90% !important;
+        left:0 !important;
+        margin: 0 auto;
+        right: 0 !important;
+        font-size: 30px !important;
+    }
+    .btn-prev-cnt{
+        width: 90% !important;
+        height: 100px !important;
+        margin: 0 auto !important;
+        margin-bottom:10px !important;
     }
 
     .gen-style{
         width: 100% !important;
-
     }
     .btn-prev{
         margin: auto;
