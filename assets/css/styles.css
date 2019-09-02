@@ -158,6 +158,37 @@ html,body{
     margin: 0 auto;
 }
 
+/* FOOTER */
+
+.bonefoot{
+    text-align: center;
+}
+.bonefoot a{
+    text-decoration: none;
+    color:black;
+}
+.copybone a{
+    color:#ff187c;
+}
+.bone-social{
+    width: auto;
+}
+.bone-social img{
+    width: 30px;
+    vertical-align: middle;
+}
+.bone-social span{
+    margin-left: 10px;
+}
+.bone-social a{
+    margin: 0px 10px;
+}
+
+@media(max-width:1024px){
+    .bone-social span{
+        display: none !important;
+    }
+}
 /* HERO SECTION */
 
 .hero-cnt{
@@ -167,8 +198,9 @@ html,body{
     margin:0 auto;
 }
 .hero{
-    height: 70vh;
-    margin-top:200px;
+    height: 60vh;
+    margin-top:150px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
