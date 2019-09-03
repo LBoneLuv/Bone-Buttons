@@ -42,73 +42,107 @@
                     </div>
                 </div>
         </nav>
+        <div class="gen-prev" style="position: fixed;left:10%;background: white;">
+                <h2>Preview</h2>
+                <div class="btn-prev-cnt">
+                    <button class="btn-prev" id="btn-prev"><span class="btn-prev-icon"><span class="btn-prev-text" id="btn-prev-text" value="Button">Button</span></button>
+                </div>
+                <h2 class="csscode">CSS</h2>
+                <div class="code-prev" style="background:  #212f3c;border-radius:4px;padding: 0px 10px 1px 10px;color:white;">
+                    <p>.bone-btn<span>{</span></p>
+                            <p style="margin-left:20px;">border: <span class="border"></span>;</p>
+                        <span>}</span>
+                </div>          
+            </div>
     <diV class="gent-cnt-div">
+            
             <div class="gen-cnt">
-                    <div class="gen-prev" style="position: fixed;top:150px;left:10%;background: white;z-index: 99999999999;">
-                        <h2>Preview</h2>
-                        <div class="btn-prev-cnt">
-                            <button class="btn-prev" id="btn-prev"><span class="btn-prev-icon"><span class="btn-prev-text" id="btn-prev-text" value="Button">Button</span></button>
-                        </div>
-                        
-                        
-                    </div>
                     <div class="gen-style">
                         <h2>Style</h2>
                         <div class="gen-mod">
-                            <div class="gen-mod-text">
-                                <h4>Text</h4>
-                                <input type="text" placeholder="Button text" id="gen-btn-text">
+                            <div style="display: flex;">
+                                    <div class="gen-mod-text">
+                                            <h5>Text</h5>
+                                            <input type="text" placeholder="Button text" id="gen-btn-text">
+                                        </div>
+                                        <div class="gen-mod-color">
+                                            <h5>Color</h5>
+                                            <div class="color-select">
+                                                    <input type="radio" name="color" value=""><input type="text" name="color" placeholder="#FF187C" id="gen-btn-color" />
+                                                    
+                                            </div>
+                                        </div>
                             </div>
-                            <div class="gen-mod-color">
-                                <h4>Color</h4>
-                                <div class="color-select">
-                                        <input type="radio" name="color" value=""><input type="text" name="color" placeholder="#FF187C" id="gen-btn-color" />
-                                        <label class="yellow">
-                                                <input type="radio" name="color" value="yellow" id="yellow">
-                                                <div class="btn-color"><span></span></div>
-                                        </label>
-                                        <label class="green">
-                                                <input type="radio" name="color" value="green" id="green">
-                                                <div class="btn-color"><span></span></div>
-                                        </label>
-                                        <label class="blue">
-                                                <input type="radio" name="color" value="blue" id="blue">
-                                                <div class="btn-color"><span></span></div>
-                                        </label>
-                                        <label class="pink">
-                                                <input type="radio" name="color" value="pink" id="pink">
-                                                <div class="btn-color"><span></span></div>
-                                        </label>
-                                        <label class="dark-blue">
-                                                <input type="radio" name="color" value="dark-blue" id="dark-blue">
-                                                <div class="btn-color"><span></span></div>
-                                        </label>
-                                        <label class="choose-color">
-                                                <input type="color" name="color" value="choose">
-                                                <div class="btn-color"><span><i class="fas fa-eye-dropper"></i></span></div>
-                                        </label>
-                                </div>
-                            </div>
+                            <label class="yellow">
+                                    <input type="radio" name="color" value="yellow" id="yellow">
+                                    <div class="btn-color"><span></span></div>
+                            </label>
+                            <label class="green">
+                                    <input type="radio" name="color" value="green" id="green">
+                                    <div class="btn-color"><span></span></div>
+                            </label>
+                            <label class="blue">
+                                    <input type="radio" name="color" value="blue" id="blue">
+                                    <div class="btn-color"><span></span></div>
+                            </label>
+                            <label class="pink">
+                                    <input type="radio" name="color" value="pink" id="pink">
+                                    <div class="btn-color"><span></span></div>
+                            </label>
+                            <label class="dark-blue">
+                                    <input type="radio" name="color" value="dark-blue" id="dark-blue">
+                                    <div class="btn-color"><span></span></div>
+                            </label>
+                            <label class="choose-color">
+                                    <input type="color" name="color" value="choose">
+                                    <div class="btn-color"><span><i class="fas fa-eye-dropper"></i></span></div>
+                            </label>
                             <div class="gen-mod-radius">
                                 <h4>Border</h4>
                                 <label>
                                     <h5>Color</h5>
                                     <input type="text" placeholder="#FF187C">
                                 </label>
-                                <label>
-                                    <div style="display: flex;">
-                                        <h5 style="width: 70%;">Border width</h5>
-                                        <span style="text-align: center;margin-top:15px;"><span id="border-width" style="text-align: right;vertical-align: middle;margin-top:45px;padding:5px 10px;background:gainsboro;border-radius:4px;color:#ff187c;"></span></span>
-                                    </div>
-                                    <input type="range" min="0" max="10" value="0" step="1" class="border-range" id="borderwidth">
+                                <label class="yellow">
+                                        <input type="radio" name="color" value="yellow" id="yellow">
+                                        <div class="btn-color"><span></span></div>
                                 </label>
-                                <label>
-                                    <div style="display:flex;">
-                                        <h5 style="width: 70%">Border Radius</h5>
-                                        <span style="text-align: center;margin-top:15px;"><span id="border-radius" style="text-align: right;vertical-align: middle;margin-top:45px;padding:5px 10px;background:gainsboro;border-radius:4px;color:#ff187c;"></span></span>
-                                    </div>
-                                    <input type="range" min="0" max="100" value="0" step="1" class="border-range" id="borderradius">
-                                </label>                                
+                                <label class="green">
+                                        <input type="radio" name="color" value="green" id="green">
+                                        <div class="btn-color"><span></span></div>
+                                </label>
+                                <label class="blue">
+                                        <input type="radio" name="color" value="blue" id="blue">
+                                        <div class="btn-color"><span></span></div>
+                                </label>
+                                <label class="pink">
+                                        <input type="radio" name="color" value="pink" id="pink">
+                                        <div class="btn-color"><span></span></div>
+                                </label>
+                                <label class="dark-blue">
+                                        <input type="radio" name="color" value="dark-blue" id="dark-blue">
+                                        <div class="btn-color"><span></span></div>
+                                </label>
+                                <label class="choose-color">
+                                        <input type="color" name="color" value="choose">
+                                        <div class="btn-color"><span><i class="fas fa-eye-dropper"></i></span></div>
+                                </label>
+                                <div style="display: flex;">
+                                        <label style="width: 45%">
+                                                <div style="display: flex;">
+                                                    <h5 style="width: 70%;">Border width</h5>
+                                                    <span style="text-align: center;margin-top:15px;"><span id="border-width" style="text-align: right;vertical-align: middle;margin-top:45px;padding:5px 10px;background:gainsboro;border-radius:4px;color:#ff187c;"></span></span>
+                                                </div>
+                                                <input type="range" min="0" max="10" value="0" step="1" class="border-range" id="borderwidth">
+                                            </label>
+                                            <label style="width: 45%">
+                                                <div style="display:flex;">
+                                                    <h5 style="width: 70%">Border Radius</h5>
+                                                    <span style="text-align: center;margin-top:15px;"><span id="border-radius" style="text-align: right;vertical-align: middle;margin-top:45px;padding:5px 10px;background:gainsboro;border-radius:4px;color:#ff187c;"></span></span>
+                                                </div>
+                                                <input type="range" min="0" max="100" value="0" step="1" class="border-range" id="borderradius">
+                                            </label>
+                                </div>           
                             </div>
                             <div class="gen-mod-shadow" style="margin-top: 20px;">
                                 <h4>Box Shadow</h4>
